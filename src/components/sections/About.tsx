@@ -59,7 +59,7 @@ export function About() {
           {/* Right — timeline (sticky) */}
           <motion.div initial={{ opacity: 0, x: 24 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6, delay: 0.3 }} className="lg:sticky lg:top-20 self-start">
             <p className="t-eyebrow mb-6">Career Timeline</p>
-            {timeline.map((t, i) => (
+            {timeline.map((t) => (
               <div key={t.year} className="grid grid-cols-[52px,1fr] gap-4 py-5 border-b border-rule last:border-b-0">
                 <span className="font-mono text-[11px] text-gold pt-[3px]">{t.year}</span>
                 <div>
